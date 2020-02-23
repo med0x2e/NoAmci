@@ -15,7 +15,7 @@ A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections tri
 ### TODO:
 * Assemblies can be encrypted and hosted on a remote endpoint, then loaded and injected into memory (NET-Assembly-Inject-Remote for a PoC) 
 this would decouple NoAmci from Assemblies and allow to dynamically load an assembly of 
-choice at runtime while keeping NoAmci.exe size less small.
+choice at runtime while keeping NoAmci.exe size small.
 
 
 ### Disclaimer:
