@@ -9,7 +9,7 @@ A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections tri
   this helped reducing the size of assemblies then embedded as resources in order to be able to use them with execute-assembly
 * Helper.cs have methods which can be used to compress other .Net binaries (Ghostpack ..etc).
 * Source code for DInvoke was copied from SharpSploit PR submitted by @FuzzySecurity and @TheWover. (all doc comments removed)
-* Tested via cobalt strike execute-assemby on Windows Build 1908/1903 and against a common EDR product (after removing all comments) -> no detections were triggered.
+* Tested via cobalt strike execute-assemby on Windows Build 1909/1903 and against a common EDR product (after removing all comments) -> no detections were triggered.
 * Build with VS2017 & .NET framework 4.x
 
 ### TODO:
