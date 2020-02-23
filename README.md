@@ -1,3 +1,4 @@
+### TLDR:
 A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections triggered when loading .NET tradecraft via Assembly.Load().
 .Net tradecraft can be compressed, encoded (encrypted if required) in order to keep the assembly size less than 1MB, then embedded as a resource
  to be loaded after patching amsi.dll memory.
@@ -10,8 +11,14 @@ A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections tri
 * Source code for DInvoke was copied from SharpSploit PR submitted by @FuzzySecurity and @TheWover. (all doc comments removed)
 * Tested via cobalt strike execute-assemby on Windows Build 1908/1903 and against a common EDR product (after removing all comments) -> no detections were triggered.
 
-### ToDo:
+### TODO:
 * Assemblies can be encrypted and hosted on a remote endpoint, then loaded and injected into memory (NET-Assembly-Inject-Remote for a PoC) 
 this would decouple NoAmci from Assemblies and allow to dynamically load an assembly of 
 choice at runtime while keeping NoAmci.exe size less small.
+
+
+### Disclaimer:
+should be used for authorized red teaming and/or nonprofit educational purposes only. 
+Any misuse of this software will not be the responsibility of the author. 
+Use it at your own networks and/or with the network owner's permission.
 
