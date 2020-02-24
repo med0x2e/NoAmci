@@ -43,7 +43,7 @@ namespace NoAmci {
                     else
                         opcodes = e6;
 
-                    //AmciSc4nbuffer hash using 0xdeadbeef as a key.
+                    //AmciSc4nbuffer hash using 0xfeedfeed as a key.
                     String amciSBufferfunctionHash = "829D7CDD764BC6DB1D0150C2D5769758";
 
                     //Retrieving AmciSc4nbuffer address using DInvoke (Thanks to the @TheWover and @FuzzySec) => Locating AmciSc4nBuffer memory address without having to rely on LoadLibrary, GetProcAddress or any other API that may trigger AMSI detections.
