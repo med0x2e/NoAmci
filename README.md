@@ -5,7 +5,7 @@ A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections tri
 
 ### Testing Notes:
 * Make sure that both the default Class and Main method have the 'public' access modifier before compressing/encoding your assembly (Ghostpack ..etc).
-* favicon.ico corresponds to a encoded and compressed version of safetykatz using DeflateStream and GzipStream APIs,
+* favicon.ico corresponds to an encoded and compressed version of safetykatz using DeflateStream and GzipStream APIs,
   this helped reducing the size of assemblies then embedded as resources in order to be able to use them with execute-assembly
 * Helper.cs have methods which can be used to compress other .Net binaries (Ghostpack ..etc).
 * Source code for DInvoke was copied from SharpSploit PR submitted by @FuzzySecurity and @TheWover. (all doc comments removed)
